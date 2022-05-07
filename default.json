@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "labels": [
+    "renovate/{{depName}}"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin"],
+      "automerge": true
+    }
+  ]
+}
