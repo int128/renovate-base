@@ -1,6 +1,5 @@
 {
   "extends": [
-    "config:base",
     "github>int128/renovate-base",
   ],
 }
