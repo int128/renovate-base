@@ -7,7 +7,6 @@ This is my base config of Renovate.
 ```json5
 {
   "extends": [
-    "config:base",
     "github>int128/renovate-base",
   ],
 }
