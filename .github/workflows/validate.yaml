@@ -3,6 +3,7 @@ name: validate
 on:
   pull_request:
     paths:
+      - .github/workflows/validate.yaml
       - default.json
       - renovate.*
   push:
