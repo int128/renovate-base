@@ -6,6 +6,7 @@ This is my base config of Renovate.
 
 ```json5
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>int128/renovate-base",
   ],
