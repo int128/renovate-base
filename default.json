@@ -3,6 +3,7 @@
   "extends": [
     "config:base",
     ":automergeMinor",
-    ":labels(dependencies,renovate/{{depName}})"
+    ":label(dependencies)",
+    ":label(renovate/{{depName}})"
   ]
 }
