@@ -1,5 +1,0 @@
-{
-  "extends": [
-    "github>int128/renovate-base",
-  ],
-}
