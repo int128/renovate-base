@@ -4,6 +4,6 @@
     "config:base",
     ":automergeMinor",
     ":assignAndReview(int128)",
-    ":label(renovate/{{depName}})"
+    ":labels(renovate,renovate/{{depName}})"
   ]
 }
