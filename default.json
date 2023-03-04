@@ -3,6 +3,7 @@
   "extends": [
     "config:base",
     ":automergeMinor",
+    ":automergeDigest",
     ":assignAndReview(int128)",
     ":labels(renovate,renovate/{{depName}})"
   ]
