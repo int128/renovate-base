@@ -11,7 +11,10 @@
     {
       "description": "Auto-merge specific packages",
       "matchPackageNames": [
-        "actions/checkout"
+        "actions/checkout",
+        "docker/login-action",
+        "docker/setup-buildx-action",
+        "docker/setup-qemu-action"
       ],
       "automerge": true
     }
