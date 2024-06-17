@@ -6,6 +6,8 @@ on:
       - .github/workflows/validate.yaml
       - .github/renovate.*
       - default.json
+      - package.json
+      - pnpm-lock.yaml
   push:
     branches:
       - main
@@ -17,6 +19,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-      - run: npx --package=renovate -- renovate-config-validator *.json .github/renovate.json*
+      - run: corepack enable pnpm
+      - run: pnpm i
+      - run: pnpm run test
