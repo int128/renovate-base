@@ -9,7 +9,7 @@
   "platformAutomerge": false,
   "labels": [
     "renovate",
-    "renovate/{{depName}})"
+    "renovate/{{depName}}"
   ],
   "packageRules": [
     {
