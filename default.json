@@ -5,9 +5,12 @@
     ":automergeMinor",
     ":automergeDigest",
     ":assignAndReview(int128)",
-    ":labels(renovate,renovate/{{depName}})"
   ],
   "platformAutomerge": false,
+  "labels": [
+    "renovate",
+    "renovate/{{depName}})",
+  ],
   "packageRules": [
     {
       "description": "Auto-merge specific packages",
