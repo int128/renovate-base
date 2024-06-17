@@ -4,12 +4,12 @@
     "config:recommended",
     ":automergeMinor",
     ":automergeDigest",
-    ":assignAndReview(int128)",
+    ":assignAndReview(int128)"
   ],
   "platformAutomerge": false,
   "labels": [
     "renovate",
-    "renovate/{{depName}})",
+    "renovate/{{depName}})"
   ],
   "packageRules": [
     {
