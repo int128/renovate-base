@@ -4,7 +4,7 @@
     "test": "renovate-config-validator --strict default.json .github/renovate.json5"
   },
   "devDependencies": {
-    "renovate": "38.67.5"
+    "renovate": "38.68.0"
   },
   "packageManager": "pnpm@9.9.0"
 }
