@@ -1,26 +1,21 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
+    "config:best-practices",
+    "npm:unpublishSafe",
+    "packages:linters",
+    "packages:jsTest",
+    "group:allNonMajor",
+    "replacements:all",
+    ":pinVersions",
+    "schedule:weekly",
     ":automergeMinor",
-    ":automergeDigest",
-    ":assignAndReview(int128)"
+    ":automergeDigest"
+  ],
+  "gitIgnoredAuthors": [
+    "41898282+github-actions[bot]@users.noreply.github.com",
+    "github-actions[bot]@users.noreply.github.com"
   ],
   "platformAutomerge": false,
-  "labels": [
-    "renovate",
-    "renovate/{{depName}}"
-  ],
-  "packageRules": [
-    {
-      "description": "Auto-merge specific packages",
-      "matchPackageNames": [
-        "actions/checkout",
-        "docker/login-action",
-        "docker/setup-buildx-action",
-        "docker/setup-qemu-action"
-      ],
-      "automerge": true
-    }
-  ]
+  "labels": ["renovate", "renovate/{{depName}}"]
 }
