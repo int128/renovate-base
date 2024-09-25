@@ -19,6 +19,8 @@ jobs:
           path: int128-renovate-base
           repository: int128/renovate-base
           ref: ${{ github.job_workflow_sha }}
+          # Fetch only the root files
+          sparse-checkout: .
       - uses: actions/setup-node@0a44ba7841725637a19e28fa30b79a866c81b0a6 # v4.0.4
         with:
           node-version-file: int128-renovate-base/.node-version
