@@ -1,24 +1,31 @@
 name: validate
 
 on:
-  pull_request:
-    paths:
-      - .github/workflows/validate.yaml
-      - .github/renovate.*
-      - default.json
-      - package.json
-      - pnpm-lock.yaml
-  push:
-    branches:
-      - main
+  workflow_call:
+    inputs:
+      config:
+        description: Path(s) to renovate.json
+        required: true
+        type: string
 
 jobs:
-  renovate:
+  validate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          path: int128-renovate-base
+          repository: int128/renovate-base
+          ref: ${{ github.workflow_sha }}
       - uses: actions/setup-node@v4
+        with:
+          node-version-file: int128-renovate-base/.node-version
+          cache-dependency-path: int128-renovate-base/pnpm-lock.yaml
       - run: corepack enable pnpm
+        working-directory: int128-renovate-base
       - run: pnpm i
-      - run: pnpm run test
+        working-directory: int128-renovate-base
+      - run: pnpm run test ${{ inputs.config }}
+        working-directory: int128-renovate-base

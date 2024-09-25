@@ -1,0 +1,19 @@
+name: validate-this
+
+on:
+  pull_request:
+    paths:
+      - .github/workflows/validate.yaml
+      - .github/renovate.*
+      - default.json
+      - package.json
+      - pnpm-lock.yaml
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    uses: ./.github/workflows/validate.yaml
+    with:
+      config: default.json .github/renovate.json5
