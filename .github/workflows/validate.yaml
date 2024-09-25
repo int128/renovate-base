@@ -5,8 +5,8 @@ on:
     inputs:
       config:
         description: Path(s) to renovate.json
+        required: false
         type: string
-        default: .github/renovate.json5
 
 jobs:
   validate:
@@ -30,6 +30,4 @@ jobs:
       - run: pnpm i
         working-directory: int128-renovate-base
       - run: |
-          "$(cd int128-renovate-base && pnpm root)/.bin/renovate-config-validator" --strict
-        env:
-          RENOVATE_CONFIG_FILE: ${{ inputs.config }}
+          "$(cd int128-renovate-base && pnpm root)/.bin/renovate-config-validator" --strict ${{ inputs.config }}
