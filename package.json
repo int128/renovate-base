@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "test": "renovate-config-validator --strict default.json .github/renovate.json5"
+    "test": "renovate-config-validator --strict default.json .github/renovate.json"
   },
   "devDependencies": {
     "renovate": "38.94.3"
