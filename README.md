@@ -1,14 +1,12 @@
-# renovate-base [![validate](https://github.com/int128/renovate-base/actions/workflows/validate.yaml/badge.svg)](https://github.com/int128/renovate-base/actions/workflows/validate.yaml)
+# renovate-oss-base [![validate](https://github.com/YutaUra/renovate-oss-base/actions/workflows/validate.yaml/badge.svg)](https://github.com/YutaUra/renovate-oss-base/actions/workflows/validate.yaml)
 
 This is my base config of Renovate.
 
 ## Getting Started
 
-```json5
+```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>int128/renovate-base",
-  ],
+  "extends": ["github>YutaUra/renovate-oss-base"]
 }
 ```
