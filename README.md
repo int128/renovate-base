@@ -14,22 +14,3 @@ A Renovate config for me.
   ],
 }
 ```
-
-### .github/workflows/validate.yaml
-
-```yaml
-name: validate
-
-on:
-  pull_request:
-    paths:
-      - .github/workflows/validate.yaml
-      - .github/renovate.*
-  push:
-    branches:
-      - main
-
-jobs:
-  validate:
-    uses: int128/renovate-base/.github/workflows/validate.yaml@main
-```
