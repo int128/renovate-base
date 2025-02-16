@@ -17,5 +17,11 @@
     "github-actions[bot]@users.noreply.github.com"
   ],
   "platformAutomerge": true,
-  "labels": ["renovate", "renovate/{{depName}}"]
+  "labels": ["renovate", "renovate/{{depName}}"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["pnpm"],
+      "automerge": true
+    }
+  ]
 }
