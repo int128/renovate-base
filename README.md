@@ -1,4 +1,4 @@
-# renovate-base [![renovate-config](https://github.com/int128/renovate-base/actions/workflows/renovate-config.yaml/badge.svg)](https://github.com/int128/renovate-base/actions/workflows/renovate-config.yaml)
+# renovate-oss-base [![renovate-config](https://github.com/YutaUra/renovate-oss-base/actions/workflows/renovate-config.yaml/badge.svg)](https://github.com/YutaUra/renovate-oss-base/actions/workflows/renovate-config.yaml)
 
 A Renovate config for me.
 
@@ -9,8 +9,6 @@ A Renovate config for me.
 ```json5
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>int128/renovate-base",
-  ],
+  "extends": ["github>YutaUra/renovate-oss-base"]
 }
 ```

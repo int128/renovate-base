@@ -10,4 +10,4 @@ jobs:
   validate:
     uses: int128/renovate-config-validator-workflow/.github/workflows/validate.yaml@main
     with:
-      config: .github/renovate.* *.json
+      config: default.json .github/renovate.json
