@@ -11,6 +11,9 @@
     "renovate",
     "renovate/{{depName}}"
   ],
+  "timezone": "Asia/Tokyo",
+  "schedule": ["before 9am on Saturday"],
+  "minimumReleaseAge": "7 days",
   "packageRules": [
     {
       "description": "Auto-merge specific packages",
