@@ -12,7 +12,10 @@
     "renovate/{{depName}}"
   ],
   "timezone": "Asia/Tokyo",
-  "schedule": ["before 9am on Saturday"],
+  "schedule": [
+    "before 8am on Saturday",
+    "before 8am on Sunday"
+  ],
   "minimumReleaseAge": "7 days",
   "packageRules": [
     {
