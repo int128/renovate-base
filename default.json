@@ -27,6 +27,13 @@
         "docker/setup-qemu-action"
       ],
       "automerge": true
+    },
+    {
+      "description": "Immediately update specific packages",
+      "matchPackageNames": [
+        "int128/typescript-action-renovate-config"
+      ],
+      "minimumReleaseAge": "0"
     }
   ]
 }
