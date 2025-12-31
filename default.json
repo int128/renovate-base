@@ -24,7 +24,8 @@
         "actions/checkout",
         "docker/login-action",
         "docker/setup-buildx-action",
-        "docker/setup-qemu-action"
+        "docker/setup-qemu-action",
+        "@actions/*"
       ],
       "automerge": true
     },
