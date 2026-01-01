@@ -33,9 +33,13 @@
       "automerge": true
     },
     {
-      "description": "Immediately update specific packages",
+      "description": "Immediately update my packages",
+      "matchDatasources": [
+        "github-releases",
+        "github-tags"
+      ],
       "matchPackageNames": [
-        "int128/typescript-action-renovate-config"
+        "int128/*"
       ],
       "minimumReleaseAge": "0"
     }
