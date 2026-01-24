@@ -4,13 +4,13 @@ A Renovate config for me.
 
 ## Getting Started
 
-### .github/renovate.json5
+### renovate.json
 
-```json5
+```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>int128/renovate-base",
-  ],
+    "github>int128/renovate-base"
+  ]
 }
 ```
