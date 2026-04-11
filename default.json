@@ -30,15 +30,31 @@
   },
   "packageRules": [
     {
-      "description": "Auto-merge specific packages",
+      "description": "Auto-merge specific actions",
+      "matchDepTypes": [
+        "action"
+      ],
       "matchPackageNames": [
         "actions/checkout",
         "docker/login-action",
         "docker/setup-buildx-action",
         "docker/setup-qemu-action",
-        "@actions/*"
+        "docker/metadata-action",
+        "docker/build-push-action"
       ],
       "automerge": true
+    },
+    {
+      "description": "Auto-merge specific packages",
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchPackageNames": [
+        "@actions/*",
+        "@graphql-codegen/*",
+        "@vitejs/*",
+        "typescript"
+      ]
     },
     {
       "description": "Immediately update my packages",
