@@ -54,7 +54,8 @@
         "@graphql-codegen/*",
         "@vitejs/*",
         "typescript"
-      ]
+      ],
+      "automerge": true
     },
     {
       "description": "Immediately update my packages",
