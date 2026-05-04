@@ -19,7 +19,8 @@
   "minimumReleaseAge": "7 days",
   "minimumReleaseAgeBehaviour": "timestamp-optional",
   "gitIgnoredAuthors": [
-    "41898282+github-actions[bot]@users.noreply.github.com"
+    "41898282+github-actions[bot]@users.noreply.github.com",
+    "132176788+int128-renovate-merge-bot[bot]@users.noreply.github.com"
   ],
   "lockFileMaintenance": {
     "enabled": true,
