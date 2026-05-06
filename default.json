@@ -68,6 +68,16 @@
         "int128/*"
       ],
       "minimumReleaseAge": "0"
+    },
+    {
+      "description": "Auto-merge int128/typescript-action-renovate-config",
+      "matchDatasources": [
+        "github-tags"
+      ],
+      "matchPackageNames": [
+        "int128/typescript-action-renovate-config"
+      ],
+      "automerge": true
     }
   ]
 }
