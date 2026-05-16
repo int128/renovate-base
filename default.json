@@ -31,7 +31,7 @@
   },
   "packageRules": [
     {
-      "description": "Auto-merge specific actions",
+      "description": "Auto-merge specific actions for major",
       "matchDepTypes": [
         "action"
       ],
@@ -46,7 +46,7 @@
       "automerge": true
     },
     {
-      "description": "Auto-merge specific packages",
+      "description": "Auto-merge specific packages for major",
       "matchDatasources": [
         "npm"
       ],
@@ -54,7 +54,8 @@
         "@actions/*",
         "@graphql-codegen/*",
         "@vitejs/*",
-        "typescript"
+        "typescript",
+        "pnpm"
       ],
       "automerge": true
     },
