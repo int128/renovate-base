@@ -46,6 +46,20 @@
       "automerge": true
     },
     {
+      "description": "Auto-merge setup-node for major",
+      "matchDepTypes": ["action"],
+      "matchPackageNames": ["actions/setup-node"],
+      "matchNewValue": "7.*",
+      "automerge": true
+    },
+    {
+      "description": "Auto-merge setup-go for major",
+      "matchDepTypes": ["action"],
+      "matchPackageNames": ["actions/setup-go"],
+      "matchNewValue": "7.*",
+      "automerge": true
+    },
+    {
       "description": "Auto-merge specific packages for major",
       "matchDatasources": [
         "npm"
