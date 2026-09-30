@@ -6,7 +6,6 @@
     ":automergeDigest",
     ":assignAndReview(int128)"
   ],
-  "platformAutomerge": false,
   "labels": [
     "renovate",
     "renovate/{{depName}}"
